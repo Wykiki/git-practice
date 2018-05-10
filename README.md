@@ -79,10 +79,12 @@ Example :
 ```
 # To ensure we branch from master
 git checkout master
+git pull [origin master]
 # Create and go on your new branch
 git checkout -b user1-step1
-cp steps/user1/step1/* ./
-git commit -am 'Some commit message'
+cp -rf steps/user1/step1/* ./
+git add .
+git commit -m 'Some commit message'
 git checkout master
 git pull [-u origin master]
 git checkout user1-step1
