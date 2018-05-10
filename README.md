@@ -12,7 +12,7 @@ Git repositories. See [Build the project](#build-the-project) for more details.
 
 ### Docker
 
-TODO
+Just run `docker-compose up -d`.
 
 ### Bare python / pip
 

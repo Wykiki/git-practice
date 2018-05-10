@@ -1,0 +1,16 @@
+version: '3.0'
+
+services:
+    app:
+        #image: python:3.6.5
+        build: .
+        restart: always
+        environment:
+            FLASK_ENV: development
+        command: >
+            bash -c "pip install -r requirements.txt
+            && flask run --host=0.0.0.0"
+        ports:
+        - 5000:5000
+        volumes:
+        - ./:/usr/src/app
