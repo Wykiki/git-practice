@@ -16,5 +16,10 @@ def main():
     return render_template("base.html")
 
 
+@app.route('/first/')
+def first():
+    return render_template("first.html")
+
+
 if __name__ == '__main__':
     app.run()
