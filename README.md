@@ -55,9 +55,9 @@ Some things should happen at some steps and you have to figure out why.
 Example :
 
 ```
-cp steps/user1/step1/* ./
-# Every files should be in the Git index, so you can oneline the commit
-git commit -am 'Some commit message'
+cp -rf steps/user1/step1/* ./
+git add .
+git commit -m 'Some commit message'
 git push [-u origin master]
 ```
 
