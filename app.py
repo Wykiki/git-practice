@@ -1,9 +1,13 @@
 from flask import Flask
+
 app = Flask(__name__)
+app.config.from_object('config')
+
 
 @app.route('/')
 def main():
-    return "Hello world"
+    return "not Hello world"
+
 
 if __name__ == '__main__':
     app.run()
